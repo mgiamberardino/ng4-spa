@@ -10,6 +10,10 @@ import { HeroesService, Heroe } from '../../services/heroes.service';
 export class HeroeComponent {
 
   heroe:Heroe;
+  casa:any = {
+    DC: 'assets/img/DC.png',
+    Marvel: 'assets/img/Marvel.ico'
+  };
 
   constructor(private activatedRoute:ActivatedRoute,
               private _heroesService:HeroesService) {

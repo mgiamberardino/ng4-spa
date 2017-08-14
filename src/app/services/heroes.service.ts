@@ -67,6 +67,11 @@ export class HeroesService {
     return this.heroes[idx];
   }
 
+  buscarHeroes(termino:string):Heroe[]{
+    return this.heroes.filter(heroe =>
+            heroe.nombre.toLowerCase().indexOf(termino.toLowerCase())>-1);
+  }
+
 }
 
 export interface Heroe {
